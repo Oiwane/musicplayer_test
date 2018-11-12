@@ -40,13 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-        /*new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                audioStop();
-            }
-        }, 10000);*/
-
         // リスナーをボタンに登録
         //play_button.setOnClickListener(new View.OnClickListener() {
             //@Override
@@ -54,7 +47,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (mp != null && mp.isPlaying()) {  //再生中
             play_button.setText(R.string.start);  //ボタンの文字をSTARTに
             mp.pause();  //一時停止
-            //mp.stop();
             //audioStop();
         } else {  //停止中
             play_button.setText(R.string.stop);  //ボタンの文字をSTOPに
