@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boolean fileCheck = false;
 
         // 曲データの受け取り
+        /* res/rawファイル作成後,その中に音声データを入れる */
         mp = MediaPlayer.create(this, R.raw.sample);
 
         // 音量調節を端末のボタンでする。
